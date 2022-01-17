@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font: bold 14px sans-serif;
+}
+
+header, section, footer, aside, nav, article, hgroup {
+    display: block;
+}
+
+body {
+    text-align: center;
+    background: gray;
+}
+
+.agrupar {
+    width: 960px;
+    border: 1px solid black;
+    margin: 15px auto;
+    background:white;
+}
+
+.cabecera{
+    background: #FA5858;
+    border: 1px solid #9999;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cabecera h1 {
+    text-align: left;
+}
+
+.menu{
+    background: #ccc  ;
+    padding: 5px 15px;
+    text-align: left;
+}
+
+.menu li{
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana;
+    display: inline-block;
+}
+
+.seccion{
+    margin: 20px;
+    width: 60%;
+    border: 1px solid black;
+    float: left;
+}
+
+article{
+    background: #fffbcc;
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+time{
+    color: gainsboro;
+}
+
+article footer{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.columna{
+    width: 30%;
+    float: left;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.pie{
+    clear: both;
+    padding: 20px;
+    background: #2d342d;
+    color: white;   
+}
+
+.imagenhtml5{
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.imagenhtml5:hover{
+    transform: rotate(0.5turn);
+    transition-duration: 2s;
+}
+
+.pie{
+    animation-duration: 2s;
+    animation-name: pie;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pie {
+    from {
+        margin-left: 70%;
+        width: 30%;
+    }
+    
+    to {
+        margin-left: 0%;
+        width: 30%;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("https://s1.1zoom.me/big0/548/Wood_planks_Blue_Light_Blue_530211_1280x851.jpg");
+}
+
+#header {
+    margin: auto;
+    width: 800px;
+    font: bold 20px sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav > li {
+    float: left;
+    margin: 4px;
+    margin-bottom: 40px;
+}
+
+.nav li a {
+    background-color:#397294;
+    color:#91cdd3;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: rgb(207, 205, 205) 5px 5px 10px inset;
+}
+
+.nav li a:hover {
+    background-color:#91cdd3;
+    color:#397294;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+td img{
+    width: 226px;
+    height: 320px;
+}
+
+.h1cabecera{
+    color: white;
+}
+
+#formulario1{
+    background-color: white;
+    border: 1px solid black;
+    font: bold 14px sans-serif;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+#formulario2{
+    background-color: white;
+    border: 1px solid black;
+    font: bold 14px sans-serif;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+#enviar{
+    background-color:#397294;
+    color:#91cdd3;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: rgb(207, 205, 205) 5px 5px 10px inset;
+}
+
+#borrar{
+    background-color:#397294;
+    color:#91cdd3;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: rgb(207, 205, 205) 5px 5px 10px inset;
+}
+
+#enviar:hover {
+    background-color:#91cdd3;
+    color:#397294;
+}
+
+#borrar:hover {
+    background-color:#91cdd3;
+    color:#397294;
+}
+
+#search{
+    background-color: white;
+    padding-top: 20px;
+    border: 1px solid black;
+    font: bold 14px sans-serif;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.error {color: #FF0000;}
+
+#formentrada{
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#entrada{
+    background-color: green;
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#categoria{
+    background-color: rgb(25, 112, 252);
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 10px;
+
+}
+
+#misdatos{
+    background-color: orange;
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#cerrarsesion{
+    background-color: red;
+    color: white;
+    width: 120px;
+    height: 30px;
+}

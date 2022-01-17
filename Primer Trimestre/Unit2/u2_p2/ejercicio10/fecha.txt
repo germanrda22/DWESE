@@ -1,0 +1,8 @@
+<?php
+
+function fecha(){
+	$format='d,M,Y';
+	return date($format);
+}
+
+echo fecha();g
