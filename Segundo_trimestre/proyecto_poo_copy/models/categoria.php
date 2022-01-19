@@ -21,7 +21,7 @@ class Categoria {
 	}
 
 	public function setNombre($nombre){
-		$this->nombre = $this->db->real_escape_string($nombre);
+		$this->nombre = $nombre;
 	}
 
 	public function getAll(){

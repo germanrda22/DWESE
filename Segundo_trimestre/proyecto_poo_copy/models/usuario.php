@@ -58,7 +58,7 @@ class Usuario
 
 	public function getPassword()
 	{
-		return password_hash($this->password, PASSWORD_BCRYPT, ['cost' => 4]);;
+		return $this->password;
 	}
 
 	public function setPassword($password)
@@ -109,19 +109,20 @@ class Usuario
 
 	public function login()
 	{
-
-		$email = $this->email;
-		$password = $this->password;
+		$email = $this->getEmail();
+		$password = $this->getPassword();
 		$result = false;
-		$sql = "SELECT * FROM usuarios where email = '$email'";
-		$login = $this->db->query($sql);
+		$sql = "SELECT * FROM usuarios where email = :email";
+		$login = $this->db->prepare($sql);
+		$login->bindParam(':email', $email, PDO::PARAM_STR);
+		$login->execute();
 
-		if ($login && $login->num_rows == 1) {
-			$usuario = $login->fetchObject();
-			$verify = password_verify($password, $usuario->password);
+		if($login && $login->rowCount() == 1){
+			$datos = $login->fetch(PDO::FETCH_OBJ);
+			$verify = password_verify($password, $datos -> password);
 
-			if ($verify) {
-				$result = $usuario;
+			if($verify){
+				$result = $datos;
 			}
 		}
 		return $result;

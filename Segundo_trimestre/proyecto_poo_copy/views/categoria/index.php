@@ -5,7 +5,7 @@
 		<th>ID</th>
 		<th>Nombre</th>
 	</tr>	
-<?php while($cat = $categorias->fetch_object()): ?>
+<?php while($cat = $categorias->fetchObject()): ?>
 	<tr>
 		<td>
 			<?=$cat->id;?>
